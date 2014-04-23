@@ -1,93 +1,171 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+        
+        <meta charset="UTF-8">
+        <title>Introduction | 欢迎大家使用 CodeIgniter ApiDoc 文件注释文档自动生成插件！</title>
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="">
+        <meta name="description" content="一直感觉codeigniter乃至php缺少一个很好的插件，能够根据文件注释自动生成相应的文档，虽然有个叫php doc的注释插件，但是并好不用，因此写了这个插件给大家使用，希望大家能够多多提宝贵意见！">
+        <meta name="keywords" content="gitbook,github" >
+        <meta name="generator" content="www.gitbook.io">
 
-    <title>Codeigniter apidoc by ym1623</title>
-  </head>
+        
+        <link rel="next" href="./codeigniter_apidoc\setup\setup.html" />
+        
+        
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Codeigniter apidoc</h1>
-        <h2>Codeigniter Notes automatically generated, Codeigniter注释自动生成器</h2>
-        <a href="https://github.com/ym1623/codeigniter_apidoc" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+        <meta property="og:title" content="Introduction | 欢迎大家使用 CodeIgniter ApiDoc 文件注释文档自动生成插件！">
+        <meta property="og:site_name" content="欢迎大家使用 CodeIgniter ApiDoc 文件注释文档自动生成插件！">
+        <meta property="og:type" content="book">
+        <meta property="og:locale" content="en_US">
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <meta property="book:author" content="https://github.com/">
+        <meta property="book:tag" content="GitBook">
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        
+    <div class="book"  data-level="0" data-basepath="." data-revision="1398244377525">
+    <div class="book-header">
+    <!-- Actions Left -->
+    
+    <a href="#" class="btn pull-left toggle-summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search"><i class="fa fa-search"></i></a>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+    <!-- Actions Right -->
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="google-plus"><i class="fa fa-google-plus"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" target="_blank" class="btn pull-right" data-sharing="twitter"><i class="fa fa-twitter"></i></a>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+    
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+    <!-- Title -->
+    <h1><a href="./" >欢迎大家使用 CodeIgniter ApiDoc 文件注释文档自动生成插件！</a></h1>
+</div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/ym1623/codeigniter_apidoc/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/ym1623/codeigniter_apidoc/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/ym1623/codeigniter_apidoc"></a> is maintained by <a href="https://github.com/ym1623">ym1623</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+    <div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
     </div>
+    <ul class="summary">
+        
+        <li data-level="0" data-path="index.html">
+            <a href="./"><i class="fa fa-check"></i> Introduction</a>
+        </li>
+        
+            <li  data-level="1" data-path="codeigniter_apidoc\setup\setup.html">
+                
+                <a href="./codeigniter_apidoc\setup\setup.html">
+                    <i class="fa fa-check"></i> <b>1.</b> 安装和使用环境
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="2" data-path="codeigniter_apidoc\Configuration\Configuration.html">
+                
+                <a href="./codeigniter_apidoc\Configuration\Configuration.html">
+                    <i class="fa fa-check"></i> <b>2.</b> 文件配置说明
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="3" data-path="codeigniter_apidoc\Annotation\Annotation.html">
+                
+                <a href="./codeigniter_apidoc\Annotation\Annotation.html">
+                    <i class="fa fa-check"></i> <b>3.</b> 文件注释说明
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="4" data-path="codeigniter_apidoc\Template\Template.html">
+                
+                <a href="./codeigniter_apidoc\Template\Template.html">
+                    <i class="fa fa-check"></i> <b>4.</b> 模板
+                </a>
+                
+                
+            </li>
+        
+            <li  data-level="5" data-path="codeigniter_apidoc\run\run.html">
+                
+                <a href="./codeigniter_apidoc\run\run.html">
+                    <i class="fa fa-check"></i> <b>5.</b> 运行及编译
+                </a>
+                
+                
+            </li>
+        
+    </ul>
+</div>
 
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-34091460-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="./codeigniter_apidoc\setup\setup.html" title="安装和使用环境" class="chapter  new-chapter" data-progress="1" style="left: 20%;"></a>
+    
+        <a href="./codeigniter_apidoc\Configuration\Configuration.html" title="文件配置说明" class="chapter  new-chapter" data-progress="2" style="left: 40%;"></a>
+    
+        <a href="./codeigniter_apidoc\Annotation\Annotation.html" title="文件注释说明" class="chapter  new-chapter" data-progress="3" style="left: 60%;"></a>
+    
+        <a href="./codeigniter_apidoc\Template\Template.html" title="模板" class="chapter  new-chapter" data-progress="4" style="left: 80%;"></a>
+    
+        <a href="./codeigniter_apidoc\run\run.html" title="运行及编译" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
+    
+    </div>
+</div>
 
-  </body>
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_8">
+                    
+                        <h2 id="-codeigniter-apidoc-">欢迎大家使用 CodeIgniter ApiDoc 文件注释文档自动生成插件！</h2>
+<p>一直感觉codeigniter乃至php缺少一个很好的插件，能够根据文件注释自动生成相应的文档，虽然有个叫php doc的注释插件，但是并好不用，因此写了这个插件给大家使用，希望大家能够多多提宝贵意见！</p>
+<pre><code>codeigniter 16号群：256269683
+codeigniter 5号群： 60109931
+昵称：Ⅱ、执笔写年华
+</code></pre>
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="./codeigniter_apidoc\setup\setup.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+        <link rel="stylesheet" href="gitbook/style.css">
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
+        <script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="gitbook/app.js"></script>
+        
+    </body>
 </html>
