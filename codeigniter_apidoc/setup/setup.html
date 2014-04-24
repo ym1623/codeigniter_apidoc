@@ -14,6 +14,8 @@
 
         
         <link rel="next" href="./codeigniter_apidoc\setup\setup.html" />
+        <link rel="stylesheet" href="../../stylesheets/markdownreader.css">
+		<link rel="stylesheet" href="../../stylesheets/prettify.css">
         
         
 
@@ -29,7 +31,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
         
     </head>
     <body>
@@ -48,7 +50,6 @@
 
     <a href="https://github.com/ym1623/codeigniter_apidoc/watchers" target="_blank" class="btn pull-right count-watch"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
     <a href="https://github.com/ym1623/codeigniter_apidoc/stargazers" target="_blank" class="btn pull-right count-star"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
-    
 
     <!-- Title -->
     <h1><a href="./" >欢迎大家使用 CodeIgniter ApiDoc 文件注释文档自动生成插件！</a></h1>
@@ -61,12 +62,12 @@
     <ul class="summary">
         
         <li data-level="0" data-path="index.html">
-            <a href="index.html"><i class="fa fa-check"></i> Introduction</a>
+            <a href="../../index.html"><i class="fa fa-check"></i> Introduction</a>
         </li>
         
             <li  data-level="1" data-path="codeigniter_apidoc\setup\setup.html">
                 
-                <a href="./codeigniter_apidoc\setup\setup.html">
+                <a href="setup.html">
                     <i class="fa fa-check"></i> <b>1.</b> 安装和使用环境
                 </a>
                 
@@ -75,7 +76,7 @@
         
             <li  data-level="2" data-path="codeigniter_apidoc\Configuration\Configuration.html">
                 
-                <a href="./codeigniter_apidoc\Configuration\Configuration.html">
+                <a href="../Configuration/Configuration.html">
                     <i class="fa fa-check"></i> <b>2.</b> 文件配置说明
                 </a>
                 
@@ -84,7 +85,7 @@
         
             <li  data-level="3" data-path="codeigniter_apidoc\Annotation\Annotation.html">
                 
-                <a href="./codeigniter_apidoc\Annotation\Annotation.html">
+                <a href="../Annotation/Annotation.html">
                     <i class="fa fa-check"></i> <b>3.</b> 文件注释说明
                 </a>
                 
@@ -93,7 +94,7 @@
         
             <li  data-level="4" data-path="codeigniter_apidoc\Template\Template.html">
                 
-                <a href="./codeigniter_apidoc\Template\Template.html">
+                <a href="./Annotation/Template.html">
                     <i class="fa fa-check"></i> <b>4.</b> 模板
                 </a>
                 
@@ -102,7 +103,7 @@
         
             <li  data-level="5" data-path="codeigniter_apidoc\run\run.html">
                 
-                <a href="./codeigniter_apidoc\run\run.html">
+                <a href="../run/run.html">
                     <i class="fa fa-check"></i> <b>5.</b> 运行及编译
                 </a>
                 
@@ -117,13 +118,13 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 0%;min-width: 0%;"></div>
+        <div class="inner" style="width: 20%;min-width: 0%;"></div>
     </div>
     <div class="chapters">
     
-        <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+        <a href="./index.html" title="Introduction" class="chapter new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="./codeigniter_apidoc\setup\setup.html" title="安装和使用环境" class="chapter  new-chapter" data-progress="1" style="left: 20%;"></a>
+        <a href="./codeigniter_apidoc\setup\setup.html" title="安装和使用环境" class="chapter new-chapter" data-progress="1" style="left: 20%;"></a>
     
         <a href="./codeigniter_apidoc\Configuration\Configuration.html" title="文件配置说明" class="chapter  new-chapter" data-progress="2" style="left: 40%;"></a>
     
@@ -140,11 +141,33 @@
                 
                     <section class="normal" id="section-gitbook_8">
                     
-<p>一直感觉codeigniter乃至php缺少一个很好的插件，能够根据文件注释自动生成相应的文档，虽然有个叫php doc的注释插件，但是并好不用，因此写了这个插件给大家使用，希望大家能够多多提宝贵意见！</p>
-<pre><code>codeigniter 16号群：256269683
-codeigniter 5号群： 60109931
-昵称：Ⅱ、执笔写年华
-</code></pre>
+                       <div id="markdown-container"><h2 id="0">安装和使用环境</h2>
+<h3 id="1">环境：</h3>
+
+<ul>
+<li>php &gt;= 5.0</li>
+<li>codeigniter版本(所有版本)</li>
+</ul>
+
+<h3 id="3">安装：</h3>
+
+<ul>
+<li>运行<code>git clone git@github.com:ym1623/codeigniter_apidoc.git</code> 或者直接下载 <a href="https://github.com/ym1623/codeigniter_apidoc/archive/master.zip">zip</a></li>
+<li>下载完成将文件夹<code>phpdoc</code>里面放入codeigniter对应的文件夹中.</li>
+</ul>
+
+<h3 id="4">目录结构</h3>
+
+<ul>
+<li>phpdoc
+<ul><li>config</li>
+<li>apidocs.php <strong>[<code>配置文件</code>]</strong></li>
+<li>controllers</li>
+<li>example <strong>[<code>测试文件目录</code>]</strong></li>
+<li>doc.php <strong>[<code>运行文件</code>]</strong></li>
+<li>libraries</li>
+<li>phpdoc <strong>[<code>phpdoc核心 插件文件夹</code>]</strong></li></ul></li>
+</ul></div><div id="markdown-outline" style="left: 1464px; max-height: 495px; top:85px; display: block;"><ul><ul><li><a href="#0">安装和使用环境</a></li><ul><li><a href="#1">环境：</a></li></ul><li><a href="#2">- codeigniter版本(所有版本)</a></li><ul><li><a href="#3">安装：</a></li><li><a href="#4">目录结构</a></li></ul></ul></ul></div>
                     
                     </section>
                 
@@ -153,16 +176,18 @@ codeigniter 5号群： 60109931
         </div>
 
         
-        
-        <a href="./codeigniter_apidoc\setup\setup.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
+        <a href="../../index.html" class="navigation navigation-prev"><i class="fa fa-angle-left"></i></a>
+        <a href="../Configuration/Configuration.html" class="navigation navigation-next"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-        <link rel="stylesheet" href="gitbook/style.css">
+        <link rel="stylesheet" href="../../gitbook/style.css">
         
-        <script src="gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="gitbook/app.js"></script>
+       
+        <script src="../../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+        <script src="../../gitbook/app.js"></script>
+        
     </body>
 </html>
