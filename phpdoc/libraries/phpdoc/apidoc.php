@@ -110,7 +110,8 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 		}
 
 		function generateItemPage($annotion){
-			$this->load->helper('url');
+			$CI = & get_instance();
+			$CI->load->helper('url');
 			$templates = $this->getSubPageTemplate();
 			$comment = $annotion['comment'];
 			$params = $comment[$this->config['rule']['params']];
