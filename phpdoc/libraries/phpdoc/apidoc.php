@@ -40,6 +40,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 						$this->method = $method;
 						$content[$group]['item'][] = strtr($templates['item'], array('{{ext}}' => $this->config['template_ext'], '{{class}}' => $className, '{{method}}' => $method, '{{description}}' => $annotion['comment'][$this->config['rule']['description']][0]['description'])) . "\n";
 						$sub_data = $this->generateItemPage($annotion);
+						if(!is_dir($this->vender_path)) mkdir($this->vender_path);
 						$sub_file = $this->vender_path . "{$className}/{$method}{$this->config['template_ext']}";
 						if (!is_dir($this->vender_path . $className)) mkdir($this->vender_path . $className);
 						$this->saveTemplate($sub_file, $sub_data);
