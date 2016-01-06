@@ -63,7 +63,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 		}
 
 		function getLineInfo($startLine, $endLine){
-			$line = $endLine - $startLine;
+			$line = intval(($endLine - $startLine) -1);
 			if($line <= 20) return "该方法占用{$line}行, 代码块优化的很好!";
 			if($line > 20 && $line < 50) return "该方法占用{$line}行, 代码块优化的比较好!";
 			return "您的代码块已经有{$line}行了, 请及时优化！";
